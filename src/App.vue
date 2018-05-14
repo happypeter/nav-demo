@@ -1,27 +1,30 @@
 <template>
   <div id="app">
-    <BlogHome />
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import BlogHome from './components/BlogHome.vue'
-
 export default {
   name: 'app',
-  components: {
-    BlogHome
-  }
+  components: {}
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+}
+
+li {
+  list-style: none;
 }
 </style>
