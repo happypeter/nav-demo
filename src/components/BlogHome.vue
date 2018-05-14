@@ -1,9 +1,9 @@
 <template>
   <div class="blog-home">
     <div class="sidebar">
-      <ul>
+      <ul >
         <li v-for="post in posts" :key="post.id">
-          <router-link :to="`/blog/${post.id}`" >
+          <router-link   active-class="active" :to="`/blog/${post.id}`" >
               {{post.title}}
           </router-link>
         </li>
@@ -50,5 +50,8 @@ export default {
 .main {
   border: 2px solid green;
   flex-grow: 1;
+}
+a.active {
+  font-size: 24px;
 }
 </style>
